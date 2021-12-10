@@ -4,7 +4,7 @@
   "description": "25 dÃ­as de reto con JavaScript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --env=node"
   },
   "repository": {
     "type": "git",
@@ -15,13 +15,22 @@
     "advent-of-code",
     "javascript"
   ],
-  "author": "JosÃ Manuel Garrido ChacÃn <logansf@gmail.com>",
+  "author": "Josï¿½ Manuel Garrido Chacï¿½n <logansf@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/LoGaNsF/adventjs/issues"
   },
   "homepage": "https://github.com/LoGaNsF/adventjs#readme",
   "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-jest": "^27.4.4",
     "jest": "^27.4.3"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "\\.jsx?$": "babel-jest"
+    }
   }
 }
